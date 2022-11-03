@@ -60,6 +60,15 @@ a {
     color: #EAECF0;
 }
 
+#contact a  {
+    color: #000;
+}
+
+#contact a {
+    background-color: #000;
+    color: #EAECF0;
+}
+
 .socials {
     display: flex;
     flex-direction: row;

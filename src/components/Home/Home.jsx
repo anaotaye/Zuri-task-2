@@ -2,9 +2,9 @@ import "./home.css";
 import profileImg from "../../assets/profile__img.svg";
 import slackIcon from "../../assets/slack.svg";
 import githubIcon from "../../assets/Icon.svg";
-import zuriIcon from "../../assets/Zuri.Internship_Logo.svg";
-import ingressiveIcon from "../../assets/I4G.svg";
 import shareIcon from "../../assets/Icon2.png"
+import { Outlet, Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -79,7 +79,8 @@ const Home = () => {
         >
           Design Books
         </a>
-        <a id="contact" className="link">Contact Me</a>
+        
+        <a id="contact" className="link"><Link to="/contact">Contact Me</Link></a>
       </div>
 
       <div className="socials">
@@ -95,13 +96,9 @@ const Home = () => {
 
       <hr className="line" />
 
-      <div className="footer">
-        <img src={zuriIcon} alt="Zuri internship logo" />
+      <Footer />
 
-        <p>HNG Internship 9 Frontend Task</p>
-
-        <img src={ingressiveIcon} alt="Ingressive for good logo" />
-      </div>
+      <Outlet />
     </div>
   );
 };
