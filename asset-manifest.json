@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1c9719d.css",
+    "main.js": "/static/js/main.ae0c18cb.js",
+    "static/media/I4G.svg": "/static/media/I4G.c1940b13227382c13451dbb2ef7b75f4.svg",
+    "static/media/profile__img.svg": "/static/media/profile__img.43be26040225499db257406ad8a3a36b.svg",
+    "static/media/Zuri.Internship_Logo.svg": "/static/media/Zuri.Internship_Logo.2fc62e5cc8e628111fd1371c6139a861.svg",
+    "static/media/slack.svg": "/static/media/slack.0a0e5211b82aface56b547364346f533.svg",
+    "static/media/Icon.svg": "/static/media/Icon.fd1f7cccfbeaebc4fa7f634c4f1c7c3a.svg",
+    "index.html": "/index.html",
+    "main.c1c9719d.css.map": "/static/css/main.c1c9719d.css.map",
+    "main.ae0c18cb.js.map": "/static/js/main.ae0c18cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1c9719d.css",
+    "static/js/main.ae0c18cb.js"
+  ]
+}
