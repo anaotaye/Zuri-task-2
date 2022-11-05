@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
-// import { Outlet } from "react-router-dom";
 import './contact.css';
 
 const Contact = () => {
@@ -84,8 +82,6 @@ const Contact = () => {
         </form>
 
         
-
-        {/* <Outlet /> */}
         </div>
         <Footer />
         </>

@@ -64,12 +64,6 @@ a {
     color: #EAECF0;
 }
 
-
-/* #contact:hover {
-    background-color: #000;
-    color: #EAECF0;
-} */
-
 .socials {
     display: flex;
     flex-direction: row;
