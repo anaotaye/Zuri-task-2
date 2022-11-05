@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
+    <>
     <div>
       <img src={profileImg} id="profile_img" alt="profile" />
       <h1 id="profile_name">Annette Black</h1>
@@ -94,10 +95,12 @@ const Home = () => {
         </a>
       </div>
 
-      <Footer />
+      
 
       <Outlet />
     </div>
+    <Footer />
+    </>
   );
 };
 

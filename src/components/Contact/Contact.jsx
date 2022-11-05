@@ -47,6 +47,7 @@ const Contact = () => {
     }
 
     return (
+        <>
         <div className="container">
         <h1 className="title">Contact Me</h1>
         <p className="title_text">Hi there, contact me to ask me about anything you have in mind.</p>
@@ -82,10 +83,12 @@ const Contact = () => {
             <button id="btn__submit" onClick={(e) => handleSubmit(e)}>Send Message</button>
         </form>
 
-        <Footer />
+        
 
         {/* <Outlet /> */}
         </div>
+        <Footer />
+        </>
     );
 }
 
