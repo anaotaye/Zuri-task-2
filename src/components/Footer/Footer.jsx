@@ -1,14 +1,17 @@
 import zuriIcon from "../../assets/Zuri.Internship_Logo.svg";
 import ingressiveIcon from "../../assets/I4G.svg";
+import "./footer.css"
 
 const Footer = () => {
+  return (
     <div className="footer">
-        <img src={zuriIcon} alt="Zuri internship logo" />
+      <img src={zuriIcon} alt="Zuri internship logo" />
 
-        <p>HNG Internship 9 Frontend Task</p>
+      <p>HNG Internship 9 Frontend Task</p>
 
-        <img src={ingressiveIcon} alt="Ingressive for good logo" />
-      </div>
-}
+      <img src={ingressiveIcon} alt="Ingressive for good logo" />
+    </div>
+  );
+};
 
 export default Footer;

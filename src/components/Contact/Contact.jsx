@@ -10,6 +10,7 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [check, setCheck] = useState(false);
+    const name = "Anastasia";
 
 
     const handleInputChange = (e) => {
@@ -32,7 +33,11 @@ const Contact = () => {
     }
     
     const handleSubmit = (e) => {
-        alert("Form sucessfully submitted");
+        if (firstName && lastName && email && message && check) {
+            alert("Form sucessfully submitted");
+        } else {
+            return;
+        }
         e.preventDefault();
         setFirstName("");
         setLastName("");
@@ -42,39 +47,45 @@ const Contact = () => {
     }
 
     return (
-        <>
-        <h1>Contact Me</h1>
-        <p>Hi there, contact me to ask me about anything you have in mind.</p>
+        <div className="container">
+        <h1 className="title">Contact Me</h1>
+        <p className="title_text">Hi there, contact me to ask me about anything you have in mind.</p>
 
         <form>
-            <div>
+            <div className="name_field col">
+                <div className="firstName col">
                 <label htmlFor="firstName">First Name</label>
-                <input id="first_name" type="text" name="firstName" placeholder="Enter your first name" value={firstName} onChange={(e) => handleInputChange(e)} required/>
+                <input id="first_name" type="text" name="firstName" placeholder="Enter your first name" value={firstName} onChange={(e) => handleInputChange(e)} required />
+                </div>
                 
+                <div className="lastName col">
                 <label htmlFor="lastName">Last Name</label>
-                <input id="last_name" type="text" name="lastName" placeholder="Enter your last name" value={lastName} onChange={(e) => handleInputChange(e)} required/>
+                <input id="last_name" type="text" name="lastName" placeholder="Enter your last name" value={lastName} onChange={(e) => handleInputChange(e)} required />
+                </div>
             </div>
 
+            <div className="email col">
             <label htmlFor="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="yourname@email.com" value={email} onChange={(e) => handleInputChange(e)} required/>
-
-            <div>
-                <label htmlFor="message">Send me a message and I'll reply you as soon as possible...</label>
-                <textarea id="message" name="message" value={message} onChange={(e) => handleInputChange(e)}></textarea>
+            <input id="email" type="email" name="email" placeholder="yourname@email.com" value={email} onChange={(e) => handleInputChange(e)} required />
             </div>
 
-            <div>
-                <input type="checkbox" name="agreement" value={check} onChange={(e) => handleInputChange(e)} />
-                <label htmlFor="agreement">You agree to providing your data to Anette, who may contact you.</label>
+            <div className="message col">
+                <label htmlFor="message">Message</label>
+                <textarea rows="6" cols="35" id="message" name="message" value={message} onChange={(e) => handleInputChange(e)} placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
             </div>
 
-            <button id="btn__submit" onClick={(e) => handleSubmit(e)}>Submit Message</button>
+            <div className="checkbox">
+                <input type="checkbox" name="agreement" value={check} onChange={(e) => handleInputChange(e)} required />
+                <label htmlFor="agreement">You agree to providing your data to {name}, who may contact you.</label>
+            </div>
+
+            <button id="btn__submit" onClick={(e) => handleSubmit(e)}>Send Message</button>
         </form>
 
         <Footer />
 
-        <Outlet />
-        </>
+        {/* <Outlet /> */}
+        </div>
     );
 }
 

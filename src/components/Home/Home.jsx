@@ -80,7 +80,7 @@ const Home = () => {
           Design Books
         </a>
         
-        <a id="contact" className="link"><Link to="/contact">Contact Me</Link></a>
+        <a id="contact"><Link to="/contact" className="link">Contact Me</Link></a>
       </div>
 
       <div className="socials">
@@ -93,8 +93,6 @@ const Home = () => {
           rel="noreferrer"/>
         </a>
       </div>
-
-      <hr className="line" />
 
       <Footer />
 
